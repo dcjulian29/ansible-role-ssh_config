@@ -1,0 +1,10 @@
+Host {{ item.host }}
+{% if item.username is defined %}
+  User {{ item.username | indent(4, false) }}
+{% endif %}{% if item.hostname is defined %}
+  Hostname {{ item.hostname | indent(4, false) }}
+{% endif %}{% if item.identity_file is defined %}
+  IdentityFile {{ item.identity_file | indent(4, false) }}
+{% endif %}{% if item.port is defined %}
+  Port {{ item.port | indent(4, false) }}
+{% endif %}

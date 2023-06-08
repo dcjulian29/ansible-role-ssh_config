@@ -1,0 +1,6 @@
+---
+- name: Include per-host SSH configuration files
+  ansible.builtin.include_tasks: config.yml
+  with_items: "{{ openssh_config }}"
+  when:
+    - openssh_config | length > 0

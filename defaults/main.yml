@@ -1,0 +1,8 @@
+---
+openssh_config: []
+#  - user: "vagrant"
+#    host: "bitbucket.com"
+#    username: "git"
+#    identity_file: "~/.ssh/id_bitbucket"
+#    hostname: "10.10.1.2"
+#    port: "8222"
